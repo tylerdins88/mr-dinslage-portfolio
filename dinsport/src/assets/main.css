@@ -1,0 +1,23 @@
+@import './base.css';
+@import './embla.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  /* Ensure a single column layout */
+}
+
+a,
+.blue {
+  text-decoration: none;
+  color: #006db0;
+  transition: 0.4s;
+  padding: 3px;
+}
