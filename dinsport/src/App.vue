@@ -58,8 +58,8 @@ header {
   margin: 0 auto 2rem;
   margin-right: 64px;
   border-radius: 30px;
-  width: 300px;
   height: 400px;
+  width: auto;
 }
 
 nav {
@@ -129,6 +129,8 @@ h3 {
 /* Media query for screens smaller than or equal to 1247px */
 @media screen and (max-width: 1247px) {
   .headshot {
+    height: 300px;
+    width: auto;
     margin: 0 auto 2rem; /* Center the image horizontally */
   }
 

@@ -95,7 +95,14 @@ import CertificatePDF from '../assets/UC-Berkeley-Extension-Certificate.pdf'
 
 <style>
 .centered-container {
-  width: 80%;
   margin-left: 10%;
+  width: 80%;
+}
+
+@media screen and (max-width: 900px) {
+  .centered-container {
+    margin-left: 20px;
+    width: 90%;
+  }
 }
 </style>

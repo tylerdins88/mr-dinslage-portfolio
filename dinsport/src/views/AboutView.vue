@@ -56,31 +56,31 @@
   <section class="embla">
     <div class="embla__viewport">
       <div class="embla__container">
-        <div class="embla__slide embla__slide__0">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/christmastyler.jpg" alt="Christmas Tyler" />
         </div>
-        <div class="embla__slide embla__slide__1">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/king-leo-cliff.jpg" alt="Leo Cliff" />
         </div>
-        <div class="embla__slide embla__slide__2">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/lake-tahoe-sunset.jpg" alt="Tahoe Sunset" />
         </div>
-        <div class="embla__slide embla__slide__3">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/leo-burn.jpg" alt="Leo Burn" />
         </div>
-        <div class="embla__slide embla__slide__4">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/red-mountain.jpg" alt="Red Mountain" />
         </div>
-        <div class="embla__slide embla__slide__5">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/rubicon-lake.jpg" alt="Rubicon Lake" />
         </div>
-        <div class="embla__slide embla__slide__6">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/rubicon-peak-splitboard.jpg" alt="Rubicon Splitboard" />
         </div>
-        <div class="embla__slide embla__slide__7">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/tallac.jpg" alt="Tallac" />
         </div>
-        <div class="embla__slide embla__slide__8">
+        <div class="embla__slide embla__slide__number">
           <img src="@/assets/aboutphotos/tylerandleo.jpg" alt="Tyler and Leo" />
         </div>
       </div>
@@ -151,28 +151,11 @@ onMounted(() => {
 .bio {
   margin-top: 30px;
 }
-.embla__slide__0 {
-  margin-left: 181px;
-}
-.embla__slide__1 {
-  margin-left: 137.5px;
-}
-.embla__slide__2 {
-  margin-left: 62.5px;
-}
-.embla__slide__3 {
-  margin-left: 181px;
-}
-.embla__slide__4 {
-  margin-left: 181px;
-}
-.embla__slide__5 {
-  margin-left: 92px;
-}
-.embla__slide__7 {
-  margin-left: 181px;
-}
-.embla__slide__8 {
-  margin-left: 181px;
+
+@media screen and (max-width: 900px) {
+  .centered-container {
+    margin-left: 20px;
+    width: 90%;
+  }
 }
 </style>

@@ -22,14 +22,14 @@
       </div>
     </div>
     <div class="papers">
-      <div class="degree">
-        <a target="_blank" rel="noreferrer" :href="UNLDegree">
-          <img alt="Degree" src="@/assets/viewphotos/UNL-Degree.jpeg" />
-        </a>
-      </div>
       <div class="certificate">
         <a target="_blank" rel="noreferrer" :href="CertificatePDF">
           <img alt="Certificate" src="@/assets/viewphotos/uc-certificate.jpg" />
+        </a>
+      </div>
+      <div class="degree">
+        <a target="_blank" rel="noreferrer" :href="UNLDegree">
+          <img alt="Degree" src="@/assets/viewphotos/UNL-Degree.jpeg" />
         </a>
       </div>
     </div>

@@ -1,25 +1,25 @@
 <template>
   <div class="credentialsSmall">
     <div>
-      <h1>Resume.</h1>
+      <h1>Resume</h1>
       <a target="_blank" rel="noreferrer" :href="ResumePDF">
         <img class="resumeSmall" alt="Resume" src="@/assets/viewphotos/resume-thumbnail.png" />
       </a>
     </div>
     <div>
-      <h2>UNL Degree.</h2>
-      <a target="_blank" rel="noreferrer" :href="UNLDegree">
-        <img class="degreeSmall" alt="Degree" src="@/assets/viewphotos/UNL-Degree.jpeg" />
-      </a>
-    </div>
-    <div>
-      <h3>Web Certificate.</h3>
+      <h3>Web Certificate</h3>
       <a target="_blank" rel="noreferrer" :href="CertificatePDF">
         <img
           class="certificateSmall"
           alt="Certificate"
           src="@/assets/viewphotos/uc-certificate.jpg"
         />
+      </a>
+    </div>
+    <div>
+      <h2>UNL Degree</h2>
+      <a target="_blank" rel="noreferrer" :href="UNLDegree">
+        <img class="degreeSmall" alt="Degree" src="@/assets/viewphotos/UNL-Degree.jpeg" />
       </a>
     </div>
   </div>
@@ -34,15 +34,13 @@ import UNLDegree from '../assets/UNL-Degree.pdf'
 <style>
 .credentialsSmall {
   display: flex;
-  justify-content: space-between; /* Adjust as needed */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .credentialsSmall div {
-  flex: 1; /* Each child div takes equal space */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-bottom: 20px; /* Adjust the space between items */
 }
 
 .credentialsSmall h1,

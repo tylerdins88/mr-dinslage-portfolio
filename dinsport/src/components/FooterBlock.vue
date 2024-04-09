@@ -74,4 +74,26 @@ img {
 .footerLink:hover {
   background-color: silver;
 }
+
+@media screen and (max-width: 630px) {
+  .footerGit,
+  .footerLink,
+  .emailMe {
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px 8px;
+    margin: 4px;
+  }
+
+  img {
+    margin-top: -1px;
+    height: 100%;
+    width: auto;
+  }
+
+  .text-lg {
+    font-size: 0.875rem; /* half the original size */
+    margin-bottom: 40px; /* half the original size */
+  }
+}
 </style>
