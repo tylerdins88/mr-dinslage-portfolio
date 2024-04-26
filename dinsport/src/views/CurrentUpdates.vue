@@ -10,8 +10,9 @@
     <photo-frame :photo="photo[0]" v-if="photo.length > 0" />
     <photo-frame :photo="photo[1]" v-if="photo.length > 1" />
     <photo-frame :photo="photo[2]" v-if="photo.length > 2" />
-    <music-frame :music="music[0]" v-if="music.length > 0" />
     <photo-frame :photo="photo[3]" v-if="photo.length > 3" />
+    <music-frame :music="music[0]" v-if="music.length > 0" />
+    <photo-frame :photo="photo[4]" v-if="photo.length > 4" />
     <music-frame :music="music[1]" v-if="music.length > 1" />
     <music-frame :music="music[2]" v-if="music.length > 2" />
   </div>
@@ -21,6 +22,7 @@
 import MusicFrame from '../components/frames/MusicFrame.vue'
 import PhotoFrame from '../components/frames/PhotoFrame.vue'
 
+import Closing from '../assets/currentphotos/closing-day-homewood.jpeg'
 import DND from '../assets/currentphotos/lego-dnd.jpg'
 import KT from '../assets/currentphotos/easter-sunday.jpg'
 import Bird from '../assets/currentphotos/work-bird.jpg'
@@ -35,7 +37,7 @@ export default {
     return {
       music: [
         {
-          date: '3 / 24 / 24',
+          date: '3/24/24',
           thoughts:
             "I am a big fan of Lane 8's music. He has a progressive deep house style that is smooth and blissful.",
           title: 'Lane 8 Spring 2024 Mixtape',
@@ -68,6 +70,12 @@ export default {
         }
       ],
       photo: [
+        {
+          date: '4/14/24',
+          thoughts:
+            'This is the view from one of the ski runs at Homewood Mountain. The resort is on the shores of Lake Tahoe. It is super cool to feel like you are riding down to the lake!',
+          image: Closing
+        },
         {
           date: '4 / 2 / 24',
           thoughts:

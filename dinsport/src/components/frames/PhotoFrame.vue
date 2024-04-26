@@ -3,7 +3,7 @@
     <p class="date">{{ photo.date }}</p>
     <div class="photoFrame">
       <div class="photoContent">
-        <p class="thoughts">{{ photo.thoughts }}</p>
+        <div v-html="photo.thoughts"></div>
       </div>
       <img class="photoImage" :src="photo.image" alt="Updates Image" />
     </div>
@@ -13,10 +13,7 @@
 <script>
 export default {
   props: {
-    photo: {
-      type: Object,
-      required: true
-    }
+    photo: Object
   }
 }
 </script>
@@ -69,6 +66,12 @@ export default {
 @media screen and (max-width: 1040px) {
   .photoImage {
     max-height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photoImage {
+    max-height: 150px; /* Adjust height for smaller screens */
   }
 }
 </style>

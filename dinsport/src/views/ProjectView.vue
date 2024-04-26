@@ -6,6 +6,7 @@
 
 <script>
 import ProjectFrame from '../components/frames/ProjectFrame.vue'
+import Inspiration from '../assets/projectphotos/inspirational-quote.jpg'
 import SecondPor from '../assets/projectphotos/second-portfolio-thumb.png'
 import Needle from '../assets/projectphotos/needle-junkeez.png'
 import Aqua from '../assets/projectphotos/aquaDown.png'
@@ -22,10 +23,19 @@ export default {
     return {
       projects: [
         {
+          title: 'Inspirational Quote',
+          image: Inspiration,
+          description:
+            'Read some uplifting messages! This procject was built using Vue3, Vite, and an API.',
+          githubLink: 'https://github.com/tylerdins88/inspirational-quote',
+          deployedLink: 'https://tylerdins88.github.io/inspirational-quote/'
+        },
+        {
           title: 'Second Portfolio',
           image: SecondPor,
           description: 'This is an app built to showcase who I am. It was build with React.',
-          githubLink: 'https://github.com/tylerdins88/my-react-portfolio'
+          githubLink: 'https://github.com/tylerdins88/my-react-portfolio',
+          deployedLink: 'https://tylerdins88.github.io/my-react-portfolio/'
         },
         {
           title: 'Needle / Junkeez',
