@@ -157,7 +157,7 @@ const isLargeScreen = ref(false)
 
 // Function to check screen size
 function checkScreenSize() {
-  isLargeScreen.value = window.innerWidth >= 1040
+  isLargeScreen.value = window.innerWidth >= 915
 }
 
 // Mount and unmount listeners

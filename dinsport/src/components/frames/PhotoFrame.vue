@@ -70,8 +70,23 @@ export default {
 }
 
 @media screen and (max-width: 600px) {
+  .lineUp {
+    flex-direction: column;
+  }
+  .date {
+    border: none;
+    margin-left: 30px;
+  }
+  .photoFrame {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items to the start */
+    width: 90%;
+  }
+
   .photoImage {
     max-height: 150px; /* Adjust height for smaller screens */
+    margin-top: 10px; /* Add margin between image and content */
   }
 }
 </style>

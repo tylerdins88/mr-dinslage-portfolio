@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h2>Web Warlocks is a small app building duo. It is run by Jesse Hudak and myself.</h2>
+    <h2>Web Warlocks is a small project building duo. It is run by Jesse Hudak and myself.</h2>
   </div>
 </template>
 

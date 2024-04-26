@@ -16,19 +16,19 @@
         </p>
       </div>
       <div class="resume">
-        <a target="_blank" rel="noreferrer" :href="ResumePDF">
+        <a @click="downloadResume">
           <img alt="Resume" src="@/assets/viewphotos/resume-thumbnail.png" />
         </a>
       </div>
     </div>
     <div class="papers">
       <div class="certificate">
-        <a target="_blank" rel="noreferrer" :href="CertificatePDF">
+        <a @click="downloadUCBCert">
           <img alt="Certificate" src="@/assets/viewphotos/uc-certificate.jpg" />
         </a>
       </div>
       <div class="degree">
-        <a target="_blank" rel="noreferrer" :href="UNLDegree">
+        <a @click="downloadUNLDegree">
           <img alt="Degree" src="@/assets/viewphotos/UNL-Degree.jpeg" />
         </a>
       </div>
@@ -37,9 +37,28 @@
 </template>
 
 <script>
-import ResumePDF from '../assets/tyler-dinslage-resume.pdf'
-import CertificatePDF from '../assets/UC-Berkeley-Extension-Certificate.pdf'
-import UNLDegree from '../assets/UNL-Degree.pdf'
+export default {
+  methods: {
+    downloadResume() {
+      // Direct link to the Resume on Google Drive
+      const resumeLink =
+        'https://drive.google.com/file/d/1MOR_DZMs0b3QXKazKkYsSRYQSEcx2Gr9/view?usp=sharing'
+      window.open(resumeLink, '_blank')
+    },
+    downloadUCBCert() {
+      // Direct link to the UCB Full Stack Cert on Google Drive
+      const ucbCertLink =
+        'https://drive.google.com/file/d/1m62Poe6Qy5PDaMN_xNudW2EF2yfxTdCv/view?usp=sharing'
+      window.open(ucbCertLink, '_blank')
+    },
+    downloadUNLDegree() {
+      // Direct link to the UNL Degree on Google Drive
+      const unlDegree =
+        'https://drive.google.com/file/d/1_5UfYxfpsYTxgODrEWk0Dy-ryZWLy5Xp/view?usp=sharing'
+      window.open(unlDegree, '_blank')
+    }
+  }
+}
 </script>
 
 <style>
