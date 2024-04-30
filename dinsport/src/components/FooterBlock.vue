@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       githubLink: 'https://github.com/tylerdins88',
-      linkedinLink: 'https://www.linkedin.com/in/tyler-dinslage-profile/'
+      linkedinLink: 'https://www.linkedin.com/in/tyler-dinslage/'
     }
   }
 }
