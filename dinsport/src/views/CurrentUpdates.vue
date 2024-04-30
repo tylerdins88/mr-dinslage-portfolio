@@ -7,14 +7,16 @@
     </h2>
   </div>
   <div>
+    <music-frame :music="music[0]" v-if="music.length > 0" />
     <photo-frame :photo="photo[0]" v-if="photo.length > 0" />
     <photo-frame :photo="photo[1]" v-if="photo.length > 1" />
     <photo-frame :photo="photo[2]" v-if="photo.length > 2" />
     <photo-frame :photo="photo[3]" v-if="photo.length > 3" />
-    <music-frame :music="music[0]" v-if="music.length > 0" />
     <photo-frame :photo="photo[4]" v-if="photo.length > 4" />
     <music-frame :music="music[1]" v-if="music.length > 1" />
+    <photo-frame :photo="photo[5]" v-if="photo.length > 5" />
     <music-frame :music="music[2]" v-if="music.length > 2" />
+    <music-frame :music="music[3]" v-if="music.length > 3" />
   </div>
 </template>
 
@@ -22,6 +24,7 @@
 import MusicFrame from '../components/frames/MusicFrame.vue'
 import PhotoFrame from '../components/frames/PhotoFrame.vue'
 
+import Sunny from '../assets/currentphotos/sunny-bike-tahoe-april.jpeg'
 import Closing from '../assets/currentphotos/closing-day-homewood.jpeg'
 import DND from '../assets/currentphotos/lego-dnd.jpg'
 import KT from '../assets/currentphotos/easter-sunday.jpg'
@@ -36,6 +39,18 @@ export default {
   data() {
     return {
       music: [
+        {
+          date: '4/25/24',
+          thoughts:
+            'Atish is a fun artist I have been following for a few years now. He plays a range of deep house to Romanian minimal to techno. A very progressive sound. This set was from the eclipse festival in Texas. That looked like a fun time!',
+          title: 'atish - [098] - Live At Texas Eclipse Festival (april 2024)',
+          artwork: 'https://i1.sndcdn.com/artworks-2QQXk9zoZM6i4I3q-KE3wBg-original.png',
+          permalink:
+            'https://soundcloud.com/atish/atish-098-live-at-texas-eclipse-festival-april-2025',
+          duration: '01:26:08',
+          description:
+            'I had the peaktime midnight slot with the honor of playing after Lee Burridge, so I started this one off with an organic vibe then transitioned through prog, tech-house, and just some straight up bangers. A few unreleased IDs in there from my boys Enamour , m.o.n.r.o.e and Saqib. Also funny moment: you may notice that the set just abruptly ends. Thats because the next act accidentally unplugged the wrong cable from the mixer. Was definitely a nerve-wracking moment….BUT my recorder also recorded the crowd noise, so its kinda a cool little audio capture of what it felt like...and you can literally hear the next DJ say "OH SHIT!!" ....The warm applause from all of you certainly softened the blow Tracklist: 098 - Live at Texas Eclipse [0:00:00] atish, Fabian Krooss - Elasticity [A Tribe Called Kotori 2024] [0:05:00] Sarkis Mikael, Nhii - Plant Power [Sounds of Khemit 2024] [0:09:00] Enamour - ID [0:13:00] Jamie Stevens & Ivan Aliaga - Firefox [Solis Records 2024] [0:17:00] Sasha - Fleuron Drift [Last Night on Earth 2024] [0:24:00] Martin Eyerer - Walk the talk [Still Hot 2024] [0:28:00] Ellroy - Safe Landing [Modelika 2024] [0:32:00] Denney - Trojan Dance [Last Night On Earth 2024] [0:36:00] Cristina Lazic - Luna [La Zic 2024] [0:40:00] m.O.N.R.O.E. - ID [0:46:00] Asher - Shifty [Aus Music 2022] [0:50:00] Deetron - Runnin [Nu Groove Records 2024] [0:54:00] John Tejada - Sweat (On The Walls) [Poker Flat RecordingsPoker Flat Recordings 2004] [0:58:00] Francesca Lombardo - Sea [Ovum Recordings 2022] [1:04:00] Saqib - ID [1:08:00] Catz n Dogz - ASA [Pets Recordings 2023] [1:13:00] Tom Demac - Sink Or Swim [Hypercolour 2017] [1:17:00] Polo (AR) - Nostalgia del Presente (Danny Howells Remix) [Manjumasi Unreleased] [1:23:00] Jim Rivers - Cosmos [COD3 QR 2023]'
+        },
         {
           date: '3/24/24',
           thoughts:
@@ -70,6 +85,12 @@ export default {
         }
       ],
       photo: [
+        {
+          date: '4/22/24',
+          thoughts:
+            'Summer is right around the corner and I could not be more excited. Lake Tahoe has a bike path all around the lake. Its perfect for going to town or just going for a ride. Here is my bike posted on a pier over looking the lake.',
+          image: Sunny
+        },
         {
           date: '4/14/24',
           thoughts:
