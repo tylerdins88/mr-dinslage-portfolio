@@ -6,6 +6,7 @@
 
 <script>
 import ProjectFrame from '../components/frames/ProjectFrame.vue'
+import Sommelier from '../assets/projectphotos/american-sommelier.jpg'
 import Inspiration from '../assets/projectphotos/inspirational-quote.jpg'
 import SecondPor from '../assets/projectphotos/second-portfolio-thumb.png'
 import Needle from '../assets/projectphotos/needle-junkeez.png'
@@ -22,6 +23,14 @@ export default {
   data() {
     return {
       projects: [
+        {
+          title: 'American Sommelier',
+          image: Sommelier,
+          description:
+            'A Wine Course and membership based website for a Sommelier, to be able to sell courses and content. Built with SquareSpace with my dev partner, Jesse Hudak.',
+          githubLink: 'N/A',
+          deployedLink: 'https://www.theamericansommelier.com/'
+        },
         {
           title: 'Inspirational Quote',
           image: Inspiration,
