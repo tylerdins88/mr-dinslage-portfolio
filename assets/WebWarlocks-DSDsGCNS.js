@@ -1,1 +1,0 @@
-import{_ as e,o as s,c as o,a as c}from"./index-CD_7oIqD.js";const t={},a={class:"about"},n=c("h2",null,"Web Warlocks is a small project building duo. It is run by Jesse Hudak and myself.",-1),r=[n];function _(l,d){return s(),o("div",a,r)}const u=e(t,[["render",_]]);export{u as default};
