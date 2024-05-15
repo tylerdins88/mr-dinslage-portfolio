@@ -64,13 +64,15 @@
         <fwb-accordion-content>
           <div>
             <ul class="frontend">
-              <li>html5</li>
-              <li>css3</li>
-              <li>javascript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
               <li>jQuery</li>
-              <li>responsive design</li>
-              <li>react</li>
-              <li>bootstrap</li>
+              <li>Responsive design</li>
+              <li>React</li>
+              <li>Vue3 Framework</li>
+              <li>CSS Processor: Tailwind</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
         </fwb-accordion-content>
@@ -80,12 +82,11 @@
         <fwb-accordion-content>
           <div>
             <ul class="backend">
-              <li>api's</li>
-              <li>node</li>
-              <li>express</li>
-              <li>model view controller (MVC)</li>
-              <li>progressive web applications (PWA)</li>
-              <li>rest</li>
+              <li>API & RESTful API</li>
+              <li>node.JS</li>
+              <li>Express</li>
+              <li>Model View Controller (MVC)</li>
+              <li>Progressive Web Applications (PWA)</li>
             </ul>
           </div>
         </fwb-accordion-content>
@@ -94,46 +95,31 @@
         <fwb-accordion-header>database skills.</fwb-accordion-header>
         <fwb-accordion-content>
           <ul class="database">
-            <li>mysql</li>
-            <li>sequelize</li>
-            <li>nosql</li>
-            <li>mongodb</li>
-            <li>mongoose</li>
-            <li>graphql</li>
+            <li>mySQL</li>
+            <li>Sequelize</li>
+            <li>noSQL</li>
+            <li>MongoDB / Atlas</li>
+            <li>Mongoose</li>
+            <li>graphQL</li>
           </ul>
-        </fwb-accordion-content>
-      </fwb-accordion-panel>
-      <fwb-accordion-panel>
-        <fwb-accordion-header>dev tools</fwb-accordion-header>
-        <fwb-accordion-content>
-          <div>
-            <ul class="dev">
-              <li>api's</li>
-              <li>node</li>
-              <li>express</li>
-              <li>model view controller (MVC)</li>
-              <li>progressive web applications (PWA)</li>
-              <li>rest</li>
-            </ul>
-          </div>
         </fwb-accordion-content>
       </fwb-accordion-panel>
       <fwb-accordion-panel>
         <fwb-accordion-header>soft skills.</fwb-accordion-header>
         <fwb-accordion-content>
           <ul class="soft">
-            <li>strong communication skills</li>
-            <li>patience and empathy</li>
-            <li>conflict resolution</li>
-            <li>time management</li>
-            <li>product knowledge</li>
-            <li>sales techniques and strategies</li>
-            <li>goal-oriented mindset</li>
-            <li>persistence and resilience</li>
-            <li>analytical and critical thinking</li>
-            <li>attention to detail</li>
-            <li>decision-making</li>
-            <li>creativity</li>
+            <li>Strong Communication Skills</li>
+            <li>Patience and Empathy</li>
+            <li>Conflict Resolution</li>
+            <li>Time Management</li>
+            <li>Product Knowledge</li>
+            <li>Sales Techniques and Strategies</li>
+            <li>Goal-Oriented Mindset</li>
+            <li>Persistence and Resilience</li>
+            <li>Analytical and Critical Thinking</li>
+            <li>Attention to Detail</li>
+            <li>Decision-Making</li>
+            <li>Creativity</li>
           </ul>
         </fwb-accordion-content>
       </fwb-accordion-panel>

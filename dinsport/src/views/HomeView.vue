@@ -25,7 +25,8 @@
         style="color: #006db0"
         >Vue.js,</a
       ><a href="https://flowbite.com/" target="_blank" style="color: #006db0">Flowbite,</a
-      ><a href="https://rapidapi.com/" target="_blank" style="color: #006db0">APIs,</a>and more.
+      ><a href="https://rapidapi.com/" target="_blank" style="color: #006db0">RapidAPIs,</a>and
+      more.
     </HomeFrame>
 
     <HomeFrame>
@@ -40,8 +41,8 @@
         style="color: #006db0"
         target="_blank"
         >Certificate</a
-      >here. Or read about a variety of jobs I have worked throughout my life. It has helped me gain
-      all these<RouterLink to="/workhistory" style="color: #006db0">skills.</RouterLink>
+      >here. Read a brief overview of the my past jobs. You can also view all of the different tech
+      <RouterLink to="/workhistory" style="color: #006db0">skill sets</RouterLink> I am developing.
     </HomeFrame>
 
     <HomeFrame>

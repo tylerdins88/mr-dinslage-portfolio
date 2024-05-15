@@ -4,7 +4,9 @@
 
     <div class="wrapper">
       <div class="greetings">
-        <h1 class="blue">Hey, I'm Tyler. Let me introduce you to myself!</h1>
+        <h1 class="blue">
+          Hey, I'm Tyler. Let me introduce you to myself & show you my tech skills!
+        </h1>
         <h3>
           <Quotes />
         </h3>
@@ -20,10 +22,10 @@
       <!-- Apply active class when menuActive is true -->
       <nav :class="{ active: menuActive }">
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">Who I Am</RouterLink>
+        <RouterLink to="/about">About Me</RouterLink>
         <RouterLink to="/projects">My Projects</RouterLink>
         <RouterLink to="/workhistory">Work History</RouterLink>
-        <RouterLink to="/currentupdates">Current Happenings</RouterLink>
+        <RouterLink to="/currentupdates">Current Updates</RouterLink>
         <RouterLink to="/webwarlocks">Web Warlocks</RouterLink>
       </nav>
     </div>
