@@ -7,16 +7,21 @@
     </h2>
   </div>
   <div>
-    <music-frame :music="music[0]" v-if="music.length > 0" />
     <photo-frame :photo="photo[0]" v-if="photo.length > 0" />
     <photo-frame :photo="photo[1]" v-if="photo.length > 1" />
+    <music-frame :music="music[0]" v-if="music.length > 0" />
     <photo-frame :photo="photo[2]" v-if="photo.length > 2" />
     <photo-frame :photo="photo[3]" v-if="photo.length > 3" />
-    <photo-frame :photo="photo[4]" v-if="photo.length > 4" />
     <music-frame :music="music[1]" v-if="music.length > 1" />
+    <photo-frame :photo="photo[4]" v-if="photo.length > 4" />
     <photo-frame :photo="photo[5]" v-if="photo.length > 5" />
+    <photo-frame :photo="photo[6]" v-if="photo.length > 6" />
+    <photo-frame :photo="photo[7]" v-if="photo.length > 7" />
+    <photo-frame :photo="photo[8]" v-if="photo.length > 8" />
     <music-frame :music="music[2]" v-if="music.length > 2" />
+    <photo-frame :photo="photo[9]" v-if="photo.length > 9" />
     <music-frame :music="music[3]" v-if="music.length > 3" />
+    <music-frame :music="music[4]" v-if="music.length > 4" />
   </div>
 </template>
 
@@ -30,6 +35,11 @@ import DND from '../assets/currentphotos/lego-dnd.jpg'
 import KT from '../assets/currentphotos/easter-sunday.jpg'
 import Bird from '../assets/currentphotos/work-bird.jpg'
 import McGee from '../assets/currentphotos/umphreys-mcgee.jpg'
+import Cliff from '../assets/currentphotos/cliff-overlook.jpg'
+import Fishing from '../assets/currentphotos/fishing-kayak.jpg'
+import Tet from '../assets/currentphotos/four-tet.jpg'
+import NewHead from '../assets/currentphotos/new-headshot.jpg'
+import Pineapple from '../assets/currentphotos/pineapple-plant.jpg'
 
 export default {
   components: {
@@ -39,6 +49,16 @@ export default {
   data() {
     return {
       music: [
+        {
+          date: '6/13/24',
+          thoughts:
+            'I found Salue from the B2B set I posted earlier in the year. He has a very upbeat and vibrant sound. This set from Beyond the Valley has been on replay the last week.',
+          title: 'salute — Beyond The Valley 2023',
+          artwork: 'https://i1.sndcdn.com/artworks-z5vomCKlreJHz9F4-cSlXXg-original.jpg',
+          permalink: 'https://soundcloud.com/beyondthevalleyofficial/salute-311223',
+          duration: '01:30:19',
+          description: 'salute — live from Beyond The Valley 2023'
+        },
         {
           date: '4/25/24',
           thoughts:
@@ -85,6 +105,35 @@ export default {
         }
       ],
       photo: [
+        {
+          date: '7/6/24',
+          thoughts:
+            'I am not a fisherman. I rarely go fishing. But I was on vacation and there was fishing gear. I wanted to go kayaking early in the morning on calm waters. My brother-in-law said we should go fishing. I got lucky and caught this large mouth bass.',
+          image: Fishing
+        },
+        {
+          date: '6/18/24',
+          thoughts:
+            'This pineapple plant I have been growing for over 4 years. It has a single pineapple growing and recently I noticed the 2 suckers on it. ',
+          image: Pineapple
+        },
+        {
+          date: '6/16/24',
+          thoughts:
+            'New headshot for my profiles. I am looking to update all my accounts and get ready for the job hunt again.',
+          image: NewHead
+        },
+        {
+          date: '6/1/24',
+          thoughts: 'Spliff Cliff. Its a cliff that overlooks Lake Tahoe. A nice easy hike.',
+          image: Cliff
+        },
+        {
+          date: '5/10/24',
+          thoughts:
+            'Here is a throwback photo to a concert I went to on Halloween. Four Tet played a 5+ hour show. It was so much fun. Everyone dressed up in costumes and enjoying themselves.',
+          image: Tet
+        },
         {
           date: '4/22/24',
           thoughts:
